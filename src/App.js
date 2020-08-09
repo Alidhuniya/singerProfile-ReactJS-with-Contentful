@@ -1,6 +1,6 @@
 import React, { Fragment, Component} from 'react';
 import "./css/minified/home.min.css";
-import "./css/minified/abstract-and-base.min.css";
+// import "./css/minified/abstract-and-base.min.css";
 class App extends Component {
 
   render () {
