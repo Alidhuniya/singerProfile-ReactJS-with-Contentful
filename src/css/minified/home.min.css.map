@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "ACAA,AAAA,EAAE,AAAC,CACC,UAAU,CAAE,MAAM,CAClB,KAAK,CAAE,IAAI,CACX,SAAS,CAAE,IAAI,CAClB",
+    "sources": [
+        "../../sass/pages-scss/home.scss",
+        "../../sass/4-pages/home/_navbar.scss"
+    ],
+    "names": [],
+    "file": "home.min.css"
+}
