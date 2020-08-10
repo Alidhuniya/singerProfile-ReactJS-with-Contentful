@@ -1,4 +1,5 @@
 import React, { Fragment, Component} from 'react';
+import Home from './pages/Home';
 
 
 class App extends Component {
@@ -6,17 +7,7 @@ class App extends Component {
   render () {
     return (
       <Fragment>
-      <div>
-      <h1>Hello</h1>
-      </div>
-
-      <div>
-      <h1>Hello2</h1>
-      <ul>
-      <li>Lists</li>
-      </ul>
-      </div>
-
+     <Home />
       </Fragment>
     );
   }
