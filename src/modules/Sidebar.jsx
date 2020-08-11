@@ -47,7 +47,7 @@ export default class Sidebar extends Component {
          {view && <img className = "sidebar__img" src = {view.profileimg.fields.file.url} alt = {heading} title = {heading} /> }
            <h1>{heading}</h1>
            <div className = "sidebar__menus">
-           <a href = "#">{view && view.menuheadings.fields.home}</a>
+         <a className = " fa fa-home"  href = "#">{view && view.menuheadings.fields.home}</a>
           <a href = "#">{view && view.menuheadings.fields.about}</a>
           <a href = "#">{view && view.menuheadings.fields.upcoming}</a>
           <a href = "#">{view && view.menuheadings.fields.songs}</a>
