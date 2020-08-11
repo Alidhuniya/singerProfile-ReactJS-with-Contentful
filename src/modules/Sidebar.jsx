@@ -15,9 +15,7 @@ export default class Sidebar extends Component {
 
         
 
-        Client.getEntries({
-            include: 3
-          })
+        Client.getEntries({})
           .then((response) => {
               const data = response.items[0].fields;
 
@@ -27,7 +25,7 @@ export default class Sidebar extends Component {
               this.setState ({
                   section: data
               })
-            //   console.log(this.state.section);
+              console.log(this.state.section);
           })
           .catch(console.error)
 
@@ -37,20 +35,18 @@ export default class Sidebar extends Component {
        
     render() {
 
-        
         const view = this.state.section;
-        console.log(view);
-        // const { heading, testin2, menuheadings} = view;
-        console.log(view && view.menuheadings.fields.about);
-
+        // console.log(view);
+        const { heading} = view; // here I'm destructing objects so I only have to type heading without view.heading
         return (
             <Fragment>
           <section className = "sidebar">
           <div className = "sidebar__block">
           <div className = "sidebar__contents">
-           <h1>{view.heading}</h1>
-           <h3>{view.testin2}</h3>
+           <h1>{heading}</h1>
+           
           <h1>{view && view.menuheadings.fields.about}</h1>
+          
           </div>
           </div>
           </section>
