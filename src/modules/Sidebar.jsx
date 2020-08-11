@@ -20,11 +20,14 @@ export default class Sidebar extends Component {
           })
           .then((response) => {
               const data = response.items[0].fields;
-            //   console.log(data)
+
+            //   const entries = response.items;
+            //   console.log(entries)
+
               this.setState ({
                   section: data
               })
-              console.log(this.state.section);
+            //   console.log(this.state.section);
           })
           .catch(console.error)
 
@@ -36,16 +39,18 @@ export default class Sidebar extends Component {
 
         
         const view = this.state.section;
-        const { heading, testin2, menuheadings} = view;
+        console.log(view);
+        // const { heading, testin2, menuheadings} = view;
+        console.log(view && view.menuheadings.fields.about);
 
         return (
             <Fragment>
           <section className = "sidebar">
           <div className = "sidebar__block">
           <div className = "sidebar__contents">
-           <h1>{heading}</h1>
-           <h3>{testin2}</h3>
-         <h2>{menuheadings.fields.about}</h2>
+           <h1>{view.heading}</h1>
+           <h3>{view.testin2}</h3>
+          <h1>{view && view.menuheadings.fields.about}</h1>
           </div>
           </div>
           </section>
