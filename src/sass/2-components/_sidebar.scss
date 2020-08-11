@@ -1,10 +1,50 @@
+.sidebar {
+   position: sticky;
+   top: 0;
+    background-color: #252525;
+    width: 250px;
+    height: 100vh;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+padding-left: 4rem;
+padding-right: 4rem;
+    
+}
+
+.frag {
+    display: grid;
+    grid-template-columns: 350px 1fr;
+}
+
+.sidebar__block {
+
+   
+    
+}
 .sidebar__img {
     width: 120px;
     height: 120px;
     border-radius: 50%;
+    // margin-top: 5rem;
 }
 
 .sidebar__menus {
     display: flex;
     flex-direction: column;
 }
+
+.sidebar__h1 {
+    color: #fff;
+}
+
+.sidebar__menusLinks {
+    font-size: 1rem;
+    text-transform: capitalize;
+    letter-spacing: 0.05em;
+    color: #fff;
+}
+
+.icon-size {
+    font-size: 1.5rem;
+}
+

@@ -8,7 +8,11 @@ class App extends Component {
     return (
       <Fragment>
      <Home />
+
+    
       </Fragment>
+
+      
     );
   }
 }
