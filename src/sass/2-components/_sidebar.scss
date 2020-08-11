@@ -1,50 +1,53 @@
 .sidebar {
-   position: sticky;
-   top: 0;
-    background-color: #252525;
-    width: 250px;
-    height: 100vh;
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-padding-left: 4rem;
-padding-right: 4rem;
-    
-}
-
-.frag {
-    display: grid;
-    grid-template-columns: 350px 1fr;
+	// position: sticky;
+	// top: 0;
+	background-color: #141414;
+	width: 250px;
+	height: 100vh;
+	padding-top: 5rem;
+	padding-bottom: 5rem;
 }
 
 .sidebar__block {
-
-   
-    
 }
 .sidebar__img {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    // margin-top: 5rem;
+	height: 120px;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
 }
 
 .sidebar__menus {
-    display: flex;
-    flex-direction: column;
+	display: flex;
+	flex-direction: column;
+	margin-top: 0.7rem;
+	padding-left: 4rem;
+	padding-right: 4rem;
 }
 
 .sidebar__h1 {
-    color: #fff;
+	color: #fff;
+	text-align: center;
+	font-weight: 500;
+	font-size: 28px;
+	letter-spacing: 0.08em;
+	margin-top: 2rem;
 }
 
 .sidebar__menusLinks {
-    font-size: 1rem;
-    text-transform: capitalize;
-    letter-spacing: 0.05em;
-    color: #fff;
+	font-size: 1rem;
+	text-transform: capitalize;
+	letter-spacing: 0.05em;
+	color: #fff;
 }
 
 .icon-size {
-    font-size: 1.5rem;
+	font-size: 1.5rem;
+	padding-right: 1rem;
+	padding-top: 2rem;
 }
 
+.sidebar__menusLinks:hover {
+	border-bottom: 1px solid #5b1abb;
+	
+}
