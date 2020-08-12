@@ -1,6 +1,10 @@
 import React, { Fragment, Component} from 'react';
-// import MailchimpSubscribe from "react-mailchimp-subscribe"
 import MailchimpSubscribe from './../modules/MailchimpSubscribe';
+import Sidebar from './../modules/Sidebar';
+import Footer from './../modules/Footer';
+import "../sass/4-pages/home/_home.scss";
+import "../sass/2-components/_mail.scss";
+
 
 // a basic form
 const CustomForm = ({ status, message, onValidated }) => {
@@ -14,16 +18,15 @@ const CustomForm = ({ status, message, onValidated }) => {
       NAME: name.value
     });
 
+    const Msg = {
+        color: "green",
+        textAlign: "center",
+        maxWidth: "80ch"
+    }
+
   return (
-    <div
-      style={{
-        background: "#efefef",
-        borderRadius: 2,
-        padding: 10,
-        display: "inline-block"
-      }}
-    >
-      {status === "sending" && <div style={{ color: "blue" }}>sending...</div>}
+    <div className = "inputfield">
+      {status === "sending" && <div >sending...</div>}
       {status === "error" && (
         <div
           style={{ color: "red" }}
@@ -32,27 +35,29 @@ const CustomForm = ({ status, message, onValidated }) => {
       )}
       {status === "success" && (
         <div
-          style={{ color: "green" }}
+        style={Msg}
           dangerouslySetInnerHTML={{ __html: message }}
         />
       )}
       <input
-        style={{ fontSize: "2em", padding: 5 }}
+      className = "nameinput"
         ref={node => (name = node)}
         type="text"
         placeholder="Your name"
       />
       <br />
       <input
-        style={{ fontSize: "2em", padding: 5 }}
+      className = "nameinput"
         ref={node => (email = node)}
         type="email"
         placeholder="Your email"
       />
       <br />
-      <button style={{ fontSize: "2em", padding: 5 }} onClick={submit}>
+      <div className ="send">
+      <button className = "sbmt"  onClick={submit}>
         Submit
       </button>
+      </div>
     </div>
   );
 };
@@ -62,22 +67,38 @@ class Subscribe extends Component {
     const url =
       "https://jster.us7.list-manage.com/subscribe/post?u=ed40c0084a0c5ba31b3365d65&id=ec6f32bf5e";
     return (
-      <div>
-        <h1>react-mailchimp-subscribe Demo</h1>
-        <h2>Default Form</h2>
-        <MailchimpSubscribe url={url} />
-        <h2>Custom Form</h2>
-        <MailchimpSubscribe
-          url={url}
-          render={({ subscribe, status, message }) => (
-            <CustomForm
-              status={status}
-              message={message}
-              onValidated={formData => subscribe(formData)}
+
+      <Fragment>
+            <section className = "home " >
+            <div className = "home__leftContainer sub">
+            <Sidebar />
+            </div>
+
+            <div className = "home__rightContainer">
+
+            <div className = "mail">
+            <h1>Subscribe to Get Early Update</h1>
+            <p>Mailchimp Newsletter</p>
+            <MailchimpSubscribe
+              url={url}
+              render={({ subscribe, status, message }) => (
+                <CustomForm
+                  status={status}
+                  message={message}
+                  onValidated={formData => subscribe(formData)}
+                />
+              )}
             />
-          )}
-        />
-      </div>
+            </div>
+
+            <div className = "home__footer">
+            <Footer />
+            </div>
+
+            </div>
+            
+            </section>
+            </Fragment>
     );
   }
 }

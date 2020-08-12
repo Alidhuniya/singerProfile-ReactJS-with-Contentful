@@ -1,0 +1,52 @@
+.mail {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15rem;
+    margin-left: -15px;
+}
+// .sub {
+//     margin-left: -50px;
+// }
+
+.inputfield {
+    margin-top: 2rem;
+    
+}
+
+
+
+.nameinput {
+    font-size: 1.3rem;
+    border: 1px solid #5b1abb;
+    margin-top: 0.7rem;
+    background-color: #030007;
+    padding: 1rem;
+    width: 700px;
+    color: #fff;
+    text-align: center;
+    @media all and (max-width: 970px ) {
+        width: 320px;
+    }
+}
+
+.sbmt {
+    width: 60%;
+    @media all and (max-width: 970px ) {
+        width: 30%;
+    }
+    background-color:#5b1abb;
+    font-size: 1.3rem;
+    color: #fff;
+    padding: 0.5rem;
+    text-align: center;
+   
+}
+
+.send {
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+}
+
