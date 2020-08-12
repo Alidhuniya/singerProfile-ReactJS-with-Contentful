@@ -16,13 +16,20 @@ class Aboutpage extends Component {
             <Sidebar />
             </div>
             <div className = "home__rightContainer">
-            <img className = "aboutpage__img" src={sumit} alt="me-sumit poudel" title = "Sumit Poudel" />
+   
             <h1 className = "aboutpage__about">About Me</h1>
           
+            <div className = "about__section">
+
             <div className = "aboutpage__aboutComponents">
             <About />
             </div>
-           
+            <div>
+            <h1 className = "about__h1aboveimg">Performing</h1>
+            <img className = "aboutpage__img" src={sumit} alt="me-sumit poudel" title = "Sumit Poudel" />
+            </div>
+            </div>
+
             <Upcoming className = "home__upcoming" />
             <div className = "home__footer">
             <Footer />
