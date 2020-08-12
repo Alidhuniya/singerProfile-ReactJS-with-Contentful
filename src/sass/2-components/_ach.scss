@@ -1,0 +1,50 @@
+.ach {
+    margin-top: 4.5rem;
+    margin-bottom: 4.5rem;
+}
+
+.ach__section {
+    display: flex;
+    margin-left: 1rem;
+
+    @media all and (max-width: 1142px) {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    @media all and (max-width: 917px) {
+        margin-left: 0rem;
+    }
+}
+
+.ach__list {
+    margin-top: 1.3rem;
+}
+.ach__list + .ach__list {
+    margin-left: 7rem;
+    @media all and (max-width: 1142px) {
+        margin-left: 2rem;
+        
+    }
+}
+
+.ach__h3 {
+    font-style: normal;
+font-weight: normal;
+font-size: 25px;
+line-height: 29px;
+
+letter-spacing: 0.05em;
+
+color: #000000;
+}
+
+.ach__h4 {
+    font-style: normal;
+font-weight: 900;
+font-size: 25px;
+line-height: 29px;
+text-align: center;
+letter-spacing: 0.05em;
+
+color: #5B1ABB;
+}

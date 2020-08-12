@@ -1,0 +1,144 @@
+.live {
+
+    background-image: url(./../../img/live.svg);
+    // padding-left: 1.3rem;
+    height: 656px;
+    padding-bottom: 90px;
+    padding-top: 105px;
+    margin-left: -150px;
+
+    
+    
+}
+
+.live__container {
+    // margin-left: 1rem;
+    // margin-right: 1rem;
+    // display: flex;
+    // flex-direction: column;
+    // align-items: center; 
+    // justify-content: center;
+}
+
+[data-overlay] {
+    position: relative;
+    background-size: cover;
+    background-position: center center;
+}
+
+.live__playBtn {
+    display: flex;
+    justify-content: center;
+}
+
+
+.live__outerPlay {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    border: 2px dashed #FFF;
+    
+    
+    .live__play {
+        width: 100px;
+        height: 100px;
+        background: #6700FF;
+        border-radius: 50%;
+        margin-left:0.9rem;
+        margin-top: 0.8rem;
+
+        .live__icon {
+            margin-left: 2.5rem;
+            margin-top: 2.5rem;
+        }
+    }
+}
+
+.live__h2 {
+    color: #fff;
+    font-weight: 900;
+    padding-top: 2.5rem;
+    font-style: normal;
+font-weight: 500;
+font-size: 36px;
+line-height: 42px;
+text-align: center;
+letter-spacing: 0.05em;
+
+color: #FFFFFF;
+}
+
+.live__h1 {
+    font-style: italic;
+font-weight: 900;
+font-size: 36px;
+line-height: 42px;
+letter-spacing: 0.05em;
+text-align: center;
+color: #6700FF;
+}
+
+.live__p {
+    line-height: 1.5;
+    color: #fff;
+    text-align: center;
+    max-width: 85ch;
+}
+
+.pr {
+    display: flex;
+    justify-content: center;
+}
+
+.live__span {
+    padding-left: 8rem;
+}
+
+.live__containerBtn {
+     display: flex;
+    justify-content: center;
+}
+
+.live__button {
+    color: #fff ;
+    background: #5B1ABB ;
+    border: 1px solid #5B1ABB;
+    font-size: 1.7rem;
+    border-radius: 5px;
+    margin-top: 1.3rem;
+
+
+    .live__btn {
+        padding-left: 1rem;
+        padding-right: 1rem;
+
+        &:hover {
+            color: #29274C;
+        }
+    }
+}
+
+// client-says
+
+// .clientSays {
+    // @include flex (center, center, column, null);
+//     display: flex;
+//     justify-content: center;
+//     flex-direction: column;
+//     align-items: center;
+    // background-image: url("../.././img/events/clientbg.jpg");
+
+//     padding-left: 1.3rem;
+//     height: 500px;
+//     padding-bottom: 90px;
+//     padding-top: 10px;
+
+//     .clientSays__img {
+//         border-radius: 50%;
+//         width: 60px;
+//         height: 60px;
+//     }
+//     .clientSays__h2 {
+//         padding-top: 1rem;
+//     }
+// }
