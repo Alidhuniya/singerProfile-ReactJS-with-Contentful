@@ -51,7 +51,7 @@ export default class Sidebar extends Component {
           <a className = "sidebar__menusLinks"  href = "#"><i className = "fa fa-user-circle icon-size"></i>{view && view.menuheadings.fields.about}</a>
           <a className = "sidebar__menusLinks"  href = "#"><i className = " fa fa-bookmark icon-size"></i>{view && view.menuheadings.fields.upcoming}</a>
           <a className = "sidebar__menusLinks"  href = "#"><i className = " fa fa-music icon-size"></i>{view && view.menuheadings.fields.songs}</a>
-          <a className = "sidebar__menusLinks"  href = "#"><i className = " fab fa-blogger-b icon-size"></i>{view && view.menuheadings.fields.blog}</a>
+          <a className = "sidebar__menusLinks"  href = "https://medium.com/topic/music"><i className = " fab fa-blogger-b icon-size"></i>{view && view.menuheadings.fields.blog}</a>
           <a className = "sidebar__menusLinks"  href = "#"><i className = " fa fa-users icon-size"></i>{view && view.menuheadings.fields.events}</a>
           <a className = "sidebar__menusLinks"  href = "#"><i className = " fa fa-bell icon-size"></i>{view && view.menuheadings.fields.subscribe}</a>
            </div>
