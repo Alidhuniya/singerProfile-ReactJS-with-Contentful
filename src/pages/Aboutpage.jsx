@@ -5,6 +5,7 @@ import Sidebar from './../modules/Sidebar';
 import About from './../modules/About';
 import Upcoming from './../modules/Upcoming';
 import Footer from './../modules/Footer';
+import sumit from "../img/sumit.svg";
 
 class Aboutpage extends Component {
     render() {
@@ -15,7 +16,13 @@ class Aboutpage extends Component {
             <Sidebar />
             </div>
             <div className = "home__rightContainer">
+            <img className = "aboutpage__img" src={sumit} alt="me-sumit poudel" title = "Sumit Poudel" />
+            <h1 className = "aboutpage__about">About Me</h1>
+          
+            <div className = "aboutpage__aboutComponents">
             <About />
+            </div>
+           
             <Upcoming className = "home__upcoming" />
             <div className = "home__footer">
             <Footer />
