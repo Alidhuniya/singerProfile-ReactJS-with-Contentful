@@ -43,3 +43,9 @@ color: #000000;
     color: #6700ff;
     margin-right: 0.5rem;  
 }
+
+@media all and (max-width: 600px) {
+	.upcoming {
+		margin-left: 5px;
+	}
+}

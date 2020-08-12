@@ -5,6 +5,10 @@
     @media all and (max-width: 720px) {
         grid-template-columns: 255px 1fr;
     }
+
+    @media all and (max-width: 600px) {
+        grid-template-columns: 1fr;
+    }
 }
 
 .home__upcoming {

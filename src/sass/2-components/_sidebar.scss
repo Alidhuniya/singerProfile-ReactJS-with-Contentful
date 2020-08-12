@@ -6,7 +6,18 @@
 	height: 100vh;
 	padding-top: 5rem;
 	padding-bottom: 5rem;
+
+	@media all and (max-width: 500px) {
+		height: auto;
+	}
+	@media all and (max-width: 700px) {
+		overflow-y: scroll;
+		
+		
+	}
 }
+
+
 
 .sidebar__block {
 }
@@ -52,6 +63,26 @@
 	
 }
 
-@media all and (max-width: 700px) {
-	
+@media all and (max-width: 600px) {
+	.sidebar {
+	width: 100%;
+	height: auto;
+	padding-top: 2.5rem;
+	padding-bottom: 2.5rem;
+	overflow: hidden;
+	}
+
+	.sidebar__menus {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		flex-direction: row;
+		margin-top: 0.7rem;
+		padding-left: 4rem;
+		padding-right: 4rem;
+	}
+
+	.sidebar__menusLinks + .sidebar__menusLinks {
+		margin-left: 1rem;
+	}
 }
