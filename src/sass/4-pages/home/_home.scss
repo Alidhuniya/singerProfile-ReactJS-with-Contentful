@@ -1,6 +1,10 @@
 .home {
     display: grid;
     grid-template-columns: 400px 1fr;
+
+    @media all and (max-width: 720px) {
+        grid-template-columns: 255px 1fr;
+    }
 }
 
 .home__upcoming {
@@ -16,4 +20,8 @@
     display: flex;
     justify-content: center;
     margin-left: -150px;
+
+    @media all and (max-width: 720px) {
+        margin-left: -5px;
+    }
 }
