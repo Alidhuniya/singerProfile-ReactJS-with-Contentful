@@ -1,5 +1,5 @@
 import React, { Fragment, Component} from 'react'
-import { Client } from './../Client';
+
 import "../sass/2-components/_footer.scss";
 
 class Footer extends Component {
