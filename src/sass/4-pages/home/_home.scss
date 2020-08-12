@@ -1,0 +1,19 @@
+.home {
+    display: grid;
+    grid-template-columns: 400px 1fr;
+}
+
+.home__upcoming {
+    margin-top: 2rem;
+}
+
+.home__footer {
+  
+}
+
+.home__footer {
+    margin-top: 7rem;
+    display: flex;
+    justify-content: center;
+    margin-left: -150px;
+}
