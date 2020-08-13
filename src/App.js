@@ -22,7 +22,9 @@ class App extends Component {
       <Router>
       <Switch>
           <Route path="/" exact>
+        
           <Sidebar />
+          
             <Home />
             
           </Route>

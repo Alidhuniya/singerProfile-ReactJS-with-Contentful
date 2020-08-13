@@ -1,13 +1,16 @@
 .home {
-      
+    //  margin-top: -45rem; 
+    // margin-left: 150px;
     margin-left: 350px;
-
     @media all and (max-width: 720px) {
         // grid-template-columns: 255px 1fr;
     }
 
     @media all and (max-width: 600px) {
         margin-left: 0rem;
+    }
+    @media all and (min-width: 600px) {
+        margin-top: -47em; 
     }
 }
 
