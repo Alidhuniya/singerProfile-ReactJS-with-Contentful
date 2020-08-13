@@ -19,9 +19,6 @@ export default class Sidebar extends Component {
     }
     
     componentDidMount() {
-
-        
-
       Client.getEntry("3VhrFwooIpqpHDuZTZ2axF")
       .then((response) => {
           const data = response.fields;

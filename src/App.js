@@ -11,6 +11,8 @@ import {
   Switch,
   Route
 } from "react-router-dom";
+import Footer from './modules/Footer';
+import Sidebar from './modules/Sidebar';
 
 class App extends Component {
 	render() {
@@ -19,23 +21,36 @@ class App extends Component {
       <Router>
       <Switch>
           <Route path="/" exact>
+          <Sidebar />
             <Home />
+            <Footer />
           </Route>
         
           <Route  path="/about" exact>
-            <Aboutpage />
+          <Sidebar />
+          <Aboutpage />
+            <Footer />
+            
           </Route>
           <Route  path="/upcoming" exact>
+          <Sidebar />
           <UpcomingPage />
+          <Footer />
         </Route>
         <Route  path="/songs" exact>
+        <Sidebar />
           <Songs />
+          <Footer />
         </Route>
         <Route  path="/subscribe" exact>
+        <Sidebar />
           <Subscribe />
+          <Footer />
         </Route>
           <Route >
+          <Sidebar />
             <Error />
+            <Footer />
           </Route>
          
         </Switch>

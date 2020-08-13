@@ -3,10 +3,10 @@ import "../sass/4-pages/about/_about.scss";
 import "../sass/4-pages/home/_home.scss";
 import "../sass/2-components/_ach.scss";
 import "../sass/2-components/_live.scss";
-import Sidebar from './../modules/Sidebar';
+// import Sidebar from './../modules/Sidebar';
 import About from './../modules/About';
 import Upcoming from './../modules/Upcoming';
-import Footer from './../modules/Footer';
+// import Footer from './../modules/Footer';
 import sumit from "../img/sumit.svg";
 
 class Aboutpage extends Component {
@@ -14,9 +14,7 @@ class Aboutpage extends Component {
         return (
             <Fragment>
             <section className = "home" >
-            <div className = "home__leftContainer">
-            <Sidebar />
-            </div>
+            
             <div className = "home__rightContainer">
    
             <h1 className = "aboutpage__about">About Me</h1>
@@ -107,7 +105,7 @@ class Aboutpage extends Component {
 
             <Upcoming className = "home__upcoming" />
             <div className = "home__footer">
-            <Footer />
+            
             </div>
             </div>
             </section>

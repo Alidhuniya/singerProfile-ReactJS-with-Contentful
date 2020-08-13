@@ -1,7 +1,7 @@
 import React, { Fragment, Component} from 'react';
 import MailchimpSubscribe from './../modules/MailchimpSubscribe';
-import Sidebar from './../modules/Sidebar';
-import Footer from './../modules/Footer';
+// import Sidebar from './../modules/Sidebar';
+// import Footer from './../modules/Footer';
 import "../sass/4-pages/home/_home.scss";
 import "../sass/2-components/_mail.scss";
 
@@ -70,9 +70,7 @@ class Subscribe extends Component {
 
       <Fragment>
             <section className = "home " >
-            <div className = "home__leftContainer sub">
-            <Sidebar />
-            </div>
+           
 
             <div className = "home__rightContainer">
 
@@ -91,9 +89,7 @@ class Subscribe extends Component {
             />
             </div>
 
-            <div className = "home__footer">
-            <Footer />
-            </div>
+           
 
             </div>
             
