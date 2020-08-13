@@ -2,12 +2,11 @@ import React, { Fragment, Component } from "react";
 import Home from './pages/Home';
 import Aboutpage from './pages/Aboutpage';
 import UpcomingPage from './pages/UpcomingPage';
+import Songs from './pages/Songs';
 import Subscribe from './pages/Subscribe';
 import Error from './modules/Error';
 
 import {
-
-
   BrowserRouter as Router,
   Switch,
   Route
@@ -28,6 +27,9 @@ class App extends Component {
           </Route>
           <Route  path="/upcoming" exact>
           <UpcomingPage />
+        </Route>
+        <Route  path="/songs" exact>
+          <Songs />
         </Route>
         <Route  path="/subscribe" exact>
           <Subscribe />
