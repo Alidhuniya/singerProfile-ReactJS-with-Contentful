@@ -28,5 +28,28 @@
 
 .release__img {
     width: 520px;
-   
+
+    @media all and (max-width: 500px) {
+        width: 320px;
+    }
+}
+
+@media all and (max-width: 500px) {
+
+    .release {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    } 
+    .release__img {
+    width: 320px;
+}
+.release__desc {
+    max-width: 40ch;
+    line-height: 1.5;
+}
+
+.yt {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
 }
