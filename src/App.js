@@ -18,43 +18,46 @@ class App extends Component {
 	render() {
 		return (
       <Fragment>
+    
       <Router>
       <Switch>
           <Route path="/" exact>
           <Sidebar />
             <Home />
-            <Footer />
+            
           </Route>
         
           <Route  path="/about" exact>
           <Sidebar />
           <Aboutpage />
-            <Footer />
+            
             
           </Route>
           <Route  path="/upcoming" exact>
           <Sidebar />
           <UpcomingPage />
-          <Footer />
+          
         </Route>
         <Route  path="/songs" exact>
         <Sidebar />
           <Songs />
-          <Footer />
+          
         </Route>
         <Route  path="/subscribe" exact>
         <Sidebar />
           <Subscribe />
-          <Footer />
+          
         </Route>
           <Route >
           <Sidebar />
             <Error />
-            <Footer />
+            
           </Route>
          
         </Switch>
         </Router>
+
+        <Footer />
           
 			</Fragment>
 		);

@@ -14,9 +14,6 @@ class Home extends Component {
             <div className = "home__rightContainer">
             <About />
             <Upcoming className = "home__upcoming" />
-            <div className = "home__footer">
-           
-            </div>
             </div>
             </section>
             </Fragment>

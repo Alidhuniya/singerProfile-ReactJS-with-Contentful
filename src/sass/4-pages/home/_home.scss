@@ -1,13 +1,13 @@
 .home {
-    display: grid;
-    grid-template-columns: 400px 1fr;
+      
+    margin-left: 350px;
 
     @media all and (max-width: 720px) {
-        grid-template-columns: 255px 1fr;
+        // grid-template-columns: 255px 1fr;
     }
 
     @media all and (max-width: 600px) {
-        grid-template-columns: 1fr;
+        margin-left: 0rem;
     }
 }
 
@@ -28,4 +28,12 @@
     @media all and (max-width: 720px) {
         margin-left: -5px;
     }
+}
+@media all and (max-width: 600px) {
+    .footer {
+        display: flex;
+        justify-content: center;
+        margin-top: 5rem;
+    }
+    
 }
