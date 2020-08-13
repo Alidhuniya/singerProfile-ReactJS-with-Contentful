@@ -78,7 +78,7 @@ class Subscribe extends Component {
 
             <div className = "mail">
             <h1>Subscribe to Get Early Update</h1>
-            <p>Mailchimp Newsletter</p>
+            <p>Notify Me</p>
             <MailchimpSubscribe
               url={url}
               render={({ subscribe, status, message }) => (

@@ -1,0 +1,32 @@
+.release {
+    padding-top: 5rem;
+}
+
+.release__h1 {
+    font-size: 2rem;
+}
+
+.release__desc {
+    max-width: 64ch;
+    line-height: 1.5;
+}
+
+.release__date {
+    font-weight: 600;
+    margin-top: 1.5rem;
+    margin-bottom: 1.7rem;
+    
+}
+
+.notifyme {
+    background-color: blueviolet;
+    color: #fff;
+    padding: 0.7rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.release__img {
+    width: 520px;
+   
+}
