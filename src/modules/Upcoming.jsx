@@ -14,20 +14,23 @@ class Upcoming extends Component {
     componentDidMount() {
 
         
-
-        Client.getEntries({})
-          .then((response) => {
-              const data = response.items[3].fields;
-
-            //   const entries = response.items;
-            //   console.log(entries)
-
-              this.setState ({
-                  section: data
-              })
-              console.log(this.state.section);
-          })
-          .catch(console.error)
+        Client.getEntry("43zDXEQS1H8MkWpVnAtMlW")
+        .then((response) => {
+            const data = response.fields;
+  
+          //   const entries = response.fields;
+          //   console.log(entries)
+          // console.log(response);
+  
+            this.setState ({
+                section: data
+            })
+            // console.log(this.state.section);
+        })
+        .catch(console.error)
+        
+        
+      
 
           
           

@@ -22,6 +22,7 @@ class App extends Component {
           <Route path="/" exact>
             <Home />
           </Route>
+        
           <Route  path="/about" exact>
             <Aboutpage />
           </Route>
@@ -34,8 +35,10 @@ class App extends Component {
           <Route >
             <Error />
           </Route>
+         
         </Switch>
         </Router>
+          
 			</Fragment>
 		);
 	}

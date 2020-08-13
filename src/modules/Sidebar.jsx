@@ -22,19 +22,20 @@ export default class Sidebar extends Component {
 
         
 
-        Client.getEntries({})
-          .then((response) => {
-              const data = response.items[1].fields;
+      Client.getEntry("3VhrFwooIpqpHDuZTZ2axF")
+      .then((response) => {
+          const data = response.fields;
 
-            //   const entries = response.items;
-            //   console.log(entries)
+        //   const entries = response.fields;
+        //   console.log(entries)
+        // console.log(response);
 
-              this.setState ({
-                  section: data
-              })
-              console.log(this.state.section);
+          this.setState ({
+              section: data
           })
-          .catch(console.error)
+          // console.log(this.state.section);
+      })
+      .catch(console.error)
 
           
           
@@ -77,7 +78,7 @@ export default class Sidebar extends Component {
            <Link className = "sidebar__menusLinks " to="/upcoming"><i className = " fa fa-bookmark icon-size"></i>{view && view.menuheadings.fields.upcoming}</Link>
            <Link className = "sidebar__menusLinks " to="/songs"><i className = " fa fa-music icon-size"></i>{view && view.menuheadings.fields.songs}</Link>
            <a className = "sidebar__menusLinks"  href = "https://medium.com/topic/music"><i className = " fab fa-blogger-b icon-size"></i>{view && view.menuheadings.fields.blog}</a>
-           <Link className = "sidebar__menusLinks " to="/blog"><i className = " fa fa-users icon-size"></i>{view && view.menuheadings.fields.events}</Link>
+          {/* <Link className = "sidebar__menusLinks " to="/blog"><i className = " fa fa-users icon-size"></i>{view && view.menuheadings.fields.events}</Link> */}
            <Link className = "sidebar__menusLinks " to="/subscribe"><i className = " fa fa-bell icon-size"></i>{view && view.menuheadings.fields.subscribe}</Link>
 
           </div>

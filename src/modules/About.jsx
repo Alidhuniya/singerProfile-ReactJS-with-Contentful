@@ -15,17 +15,18 @@ class About extends Component {
 
         
 
-        Client.getEntries({})
+        Client.getEntry("7hAaJSFAnz44MkvKJnoAo3")
           .then((response) => {
-              const data = response.items[4].fields;
+              const data = response.fields;
 
-            //   const entries = response.items;
+            //   const entries = response.fields;
             //   console.log(entries)
+            // console.log(response);
 
               this.setState ({
                   section: data
               })
-              console.log(this.state.section);
+            //   console.log(this.state.section);
           })
           .catch(console.error)
 
