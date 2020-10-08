@@ -42,7 +42,7 @@ export default class Sidebar extends Component {
 
         const view = this.state.section;
         
-        // console.log(view);
+        console.log(view);
         const { heading} = view; // here I'm destructing objects so I only have to type heading without view.heading
         return (
             <Fragment >
