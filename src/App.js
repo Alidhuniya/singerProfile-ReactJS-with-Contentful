@@ -7,7 +7,7 @@ import Subscribe from './pages/Subscribe';
 import Error from './modules/Error';
 
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Switch,
   Route
 } from "react-router-dom";
